@@ -1,3 +1,21 @@
 .works {
+	height: 1164px;
 	background-color: rgba(255, 255, 255, 1);
+}
+
+.works > h2 {
+	padding-top: 120px;
+	text-indent: 42px;
+}
+
+.works__content {
+	padding-top: 116px;
+}
+
+.works__content--row2 {
+	padding-top: 5px;
+}
+
+.works__img--mgn {
+	margin: 0 6px;
 }
