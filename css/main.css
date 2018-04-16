@@ -3,8 +3,10 @@
 @import url(works.css);
 @import url(services.css);
 @import url(team.css);
-@import url(comments.css);
+@import url(partners.css);
+@import url(testimonial.css);
 @import url(contact.css);
+@import url(footer.css);
 
 
 /*FONTS*/
@@ -61,7 +63,7 @@
 }
 
 .width-1-2 {
-	width: 49.8248%;
+	width: 49.6248%;
 	/*width: 50%;*/
 }
 
@@ -98,7 +100,7 @@ h2 {
 .works__subtitle,
 .services__subtitle,
 .team__subtitle,
-.comments__subtitle {
+.testimonial__subtitle {
 	margin: 0;
 	padding: 0;
 	font-family: 'merriweather_bold', sans-serif;

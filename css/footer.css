@@ -1,0 +1,60 @@
+.footer {
+	height: 312px;
+	background-color: rgb(38, 43, 46);
+	text-align: center;
+}
+
+.footer__follow {
+	padding: 90px 0 15px;
+	font-family: 'raleway_regular';
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: 0.16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	opacity: 0.8;
+}
+
+.footer__listicon {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer__listicon--item {
+ 	display: inline-block;
+ 	height: 40px;
+ 	width: 46px;
+ 	margin: 0 4px;
+ 	vertical-align: middle;
+ 	padding: 9px;
+ 	background-color: rgb(66, 70, 72);
+}
+
+.footer__listicon--item:hover {
+ 	background-color: rgb(110, 238, 227);
+ 	cursor: pointer;
+}
+
+.footer__listicon--img {
+ 	vertical-align: middle;
+}
+
+.footer__listicon--img:hover {
+ 	background-color: transparent;
+}
+
+.footer__listicon--img:nth-child(1) {
+
+}
+
+.footer__copyright {
+	font-family: 'raleway_regular';
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: 0.16px;
+	font-weight: 500;
+	color: rgb(255, 255, 255);
+	opacity: 0.4;
+}

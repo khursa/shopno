@@ -1,0 +1,10 @@
+.partners {
+	height: 385px;
+	background: url(../img/contact-bg.jpg) 50% 0% no-repeat;
+}
+
+.partners__img {
+	width: 100%;
+	padding-top: 109px;
+	margin: 0 auto;
+}

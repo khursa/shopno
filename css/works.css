@@ -12,6 +12,11 @@
 	padding-top: 116px;
 }
 
+.works__content--row1 img,
+.works__content--row2 img {
+	width: calc(33.33% - 10px);
+}
+
 .works__content--row2 {
 	padding-top: 5px;
 }
