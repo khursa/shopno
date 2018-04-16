@@ -1,0 +1,124 @@
+.team {
+	height: 1315px;
+	background-color: rgb(255,255,255);
+}
+
+.team > h2 {
+	padding-top: 120px;
+	text-indent: 42px;
+}
+
+.team__content {
+	padding-top: 125px;
+}
+
+.team__content--row2 {
+	padding-top: 14px;
+}
+
+.team__member--mgn {
+	margin: 0 16px;
+}
+
+.member {
+	display: inline-block;
+	position: relative;
+	height: 440px;
+	width: calc(33.33% - 16px);
+}
+
+.member:nth-child(1) {
+	background: lightgray url(../img/team-1.jpg) 50% 50% no-repeat;
+}
+
+.member:nth-child(2) {
+	background: lightgray url(../img/team-2.jpg) 50% 50% no-repeat;
+}
+
+.member:nth-child(3) {
+	background: lightgray url(../img/team-3.jpg) 50% 50% no-repeat;
+}
+
+.team__content--row2 > .member:nth-child(1) {
+	background: lightgray url(../img/team-4.jpg) 50% 50% no-repeat;
+}
+
+.team__content--row2 > .member:nth-child(2) {
+	background: lightgray url(../img/team-5.jpg) 50% 50% no-repeat;
+}
+
+.team__content--row2 > .member:nth-child(3) {
+	background: lightgray url(../img/team-1.jpg) 50% 50% no-repeat;
+}
+
+.member__overlay {
+	display: none;
+	width: 90.54%;
+	margin: 0 auto;
+ 	background-color: rgb(110, 238, 227);
+}
+
+.member__overlay::before {
+	content: '';
+	position: absolute;
+	top: -30px;
+	left: 21px;
+	border: 11px solid transparent;
+	border-bottom: 19px solid rgb(110, 238, 227);
+}
+
+.member:hover .member__overlay {
+	display: block;
+	position: absolute;
+	margin: 0 auto;
+	left: 50%;
+	bottom: 15px;
+	transform: translateX(-50%);
+}
+
+.member__title,
+.member__text,
+.member__socialicon {
+	margin: 0 38px;
+}
+
+.member__title {
+	padding: 40px 0 25px;
+	font-family: 'merriweather_bold';
+	font-size: 20px;
+	font-weight: 600;
+	font-style: normal;
+	color: rgb(0, 0, 0);
+
+}
+
+.member__title span {
+	padding: 40px 0 25px;
+	font-family: 'merriweather_bold';
+	font-size: 15px;
+	font-weight: 400;
+	font-style: italic;
+	color: rgb(102, 102, 102);
+}
+
+.member__text {
+	font-family: 'raleway_regular';
+	font-size: 16px;
+	line-height: 1.24;
+}
+
+.member__socialicon {
+	list-style: none;
+	padding: 0;
+}
+
+.member__socialicon-item {
+	display: inline-block;
+	padding: 30px 4px;
+}
+
+
+{
+	transform: scale(1.02);
+	transition: 1s ease-out;
+}

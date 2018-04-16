@@ -1,7 +1,183 @@
 /*HEADER STYLES*/
+@keyframes smoothnavbar {
+
+  0% {
+    left: 0;
+  }
+
+  5% {
+    left: -3px;
+  }
+
+  10% {
+    left: -6px;
+  }
+
+  15% {
+    left: -11px;
+  }
+
+  20% {
+    left: -17px;
+  }
+
+  25% {
+    left: -23px;
+  }
+
+  30% {
+    left: -32px;
+  }
+
+  35% {
+    left: -40px;
+  }
+
+  40%{
+    left: -49px;
+  }
+
+  45% {
+    left: -54px;
+  }
+
+  50% {
+    left: -63px;
+  }
+
+  55% {
+    left: -70px;
+  }
+
+  60% {
+    left: -78px;
+  }
+
+  65% {
+    left: -85px;
+  }
+
+  70% {
+    left: -93px;
+  }
+
+  75% {
+    left: -100px;
+  }
+
+  80% {
+    left: -106px;
+  }
+
+  85% {
+    left: -111px;
+  }
+
+  90%{
+    left: -115px;
+  }
+
+  95%{
+    left: -118px;
+  }
+
+  100% {
+    left: -120px;
+  }
+}
+
+
+@keyframes smoothnavbar-off {
+
+  0% {
+    left: -120px;
+  }
+
+  5% {
+    left: -118px;
+  }
+
+  10% {
+    left: -115px;
+  }
+
+  15% {
+    left: -111px;
+  }
+
+  20% {
+    left: -106px;
+  }
+
+  25% {
+    left: -100px;
+  }
+
+  30% {
+    left: -93px;
+  }
+
+  35% {
+    left: -85px;
+  }
+
+  40%{
+    left: -78px;
+  }
+
+  45% {
+    left: -70px;
+  }
+
+  50% {
+    left: -63px;
+  }
+
+  55% {
+    left: -54px;
+  }
+
+  60% {
+    left: -49px;
+  }
+
+  65% {
+    left: -40px;
+  }
+
+  70% {
+    left: -32px;
+  }
+
+  75% {
+    left: -23px;
+  }
+
+  80% {
+    left: -17px;
+  }
+
+  85% {
+    left: -11px;
+  }
+
+  90%{
+    left: -6px;
+  }
+
+  95%{
+    left: -3px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+
 .header {
 	height: 100vh;
-	/*background-color: rgb(239, 240, 242);*/
+	background-color: rgb(239, 240, 242);
 }
 
 .header__topblock {
@@ -56,7 +232,7 @@ br + .header__title--bg {
 	box-shadow: -14px 0px 0px 0px rgba(178, 242, 238);
 }
 
-.header__bottom {
+.header__button {
 	display: block;
 	max-width: 230px;
 	margin: 0 auto;
@@ -72,21 +248,30 @@ br + .header__title--bg {
 	text-decoration: none;
 	background-color: transparent;
 	color: rgba(0, 0, 0, 0.75);
+    transition-duration: .8s;
+}
+
+
+.header__button:hover, 
+.header__button:focus {
+    color: #000000;
+    box-shadow: -1px 1px 2px #43ae29;
+    background-color:rgba(178, 242, 238);
+    box-shadow: 0 12px 16px 0 rgba(229, 229, 229, .24),
+    			0 17px 50px 0 rgba(229, 229, 229, .19);
+	transition: 0.8s ease-out;
+}
+
+.header__button:active {
+    color: #3d742f;
+    box-shadow: -2px 4px 8px #a7b027;
+    background-color: #f6f8de;
 }
 
 .header__imgbox {
 	position: relative;
 	height: 68px;
 }
-
-
-/*Shadow effect on the stand*/
-
-/*.header__imgbox--img img {
-	position: absolute;
-	right: 4.4%;
-	top: -50%;
-}*/
 
 .header__imgbox--img::before {
 	content: '';
@@ -108,4 +293,86 @@ br + .header__title--bg {
 	background-image: url(../img/header-glass.png);
 }
 
-/*END HEADER STYLES*/
+/*MOBILE NAVIGATION*/
+
+svg {
+	cursor: pointer;
+    transition-duration: 0.8s;
+}
+
+svg:hover {
+	transform: scale(1.05);
+	transition: 0.6s ease-out;
+}
+
+.burgerform {
+	position: relative;
+}
+
+.mobilenav {
+	display: none;
+}
+
+#mycheck {
+	display: none;
+}
+
+#mycheck:checked ~ nav {
+	display: block;
+	opacity: 1;
+	position: absolute;
+	animation: smoothnavbar 1s linear forwards;
+}
+
+#mycheck ~ nav {
+	display: block;
+	opacity: 0;
+	position: absolute;
+	animation: smoothnavbar-off 0.75s linear forwards;
+    transition-duration: 1s;
+}
+
+.mobilenav__list {
+	list-style: none;
+}
+
+.mobilenav__item {
+	background: rgba(80, 80, 80, 1);
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom: 1px solid rgba(178, 242, 238);
+    box-shadow: 2px 0 3px 1px rgba(0,0,0,.9);
+    transition-duration: 0.6s;
+}
+
+.mobilenav__item:last-child {
+	border: none;	
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,.9),
+    			2px 0 3px 1px rgba(0,0,0,.9);
+}
+
+.mobilenav__item:hover {
+	background-color: rgb(131, 131, 131);
+	transition: 0.6s ease-out;
+    cursor: pointer;
+}
+
+.mobilenav__link {
+	display: block;
+	width: 200px;
+	padding: 5px 20px;
+	margin: 0 auto;
+	font-family: 'raleway_regular', sans-serif;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	text-shadow: 1px 1px 1px #000000;
+	color: rgba(178, 242, 238);
+    transition-duration: 0.6s;
+}
+
+.mobilenav__link:hover {
+	color: rgba(255, 255, 255, 0.95);
+	transition: 0.6s ease-out;
+}
