@@ -31,6 +31,9 @@
 				</a>
 			</div>
 			<div class="header__topblock--menu">
+				<form class="burgerform">
+				<input type="checkbox" id="mycheck" name="mycheck">
+				<label for="mycheck">				
 				<svg
 					id="menu.svg"
 					xmlns="http://www.w3.org/2000/svg"
@@ -68,6 +71,67 @@
 				  	ry="1.5"
 				  	/>
 				</svg>
+				</label>
+				<nav class="mobilenav">
+					<ul class="mobilenav__list">
+						<li class="mobilenav__item">
+							<a 
+								href="#about" 
+								class="mobilenav__link">
+								ABOUT US
+							</a>
+						</li>
+						<li class="mobilenav__item">
+							<a 
+								href="#works" 
+								class="mobilenav__link"
+								>
+								FEATURED WORKS
+							</a>
+						</li>
+						<li class="mobilenav__item">
+							<a 
+								href="#services" 
+								class="mobilenav__link"
+								>
+								OUR SERVICES
+							</a>
+						</li>
+						<li class="mobilenav__item">
+							<a 
+								href="#team" 
+								class="mobilenav__link"
+								>
+								SMALL TEAM
+							</a>
+						</li>
+						<li class="mobilenav__item">
+							<a 
+								href="#testimonial" 
+								class="mobilenav__link"
+								>
+									WHAT THEY SAYS
+							</a>
+						</li>
+						<li class="mobilenav__item">
+							<a 
+								href="#partners" 
+								class="mobilenav__link"
+								>
+								PARTNERS
+							</a>
+						</li>
+						<li class="mobilenav__item">
+							<a 
+								href="#contact" 
+								class="mobilenav__link"
+								>
+								CONTACT US
+							</a>
+						</li>
+					</ul>
+				</nav>
+				</form>
 			</div>
 		</div>
 		<h1 class="header__title">
@@ -83,7 +147,7 @@
 		</h1>
 		<a
 			href="#contact"
-			class="header__bottom"
+			class="header__button"
 			>
 			Contact us
 		</a>
@@ -98,7 +162,7 @@
 
 	<main class="main">
 		<!-- ABOUT -->
-		<div class="about container">
+		<div id="about" class="about container">
 			<h2 class="about__title">
 				About us
 			</h2>
@@ -120,7 +184,7 @@
 						We Actually Do amazing works
 					</h3>
 					<p class="about__info--text">
-						A visual approach is an approach to a runway at an airport 
+						A visual approach is an approach to a runway at an airport
 						conducted under instrument flight rules. The pilot must at all times have either the airport or the preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot must at all times.
 					</p>
 					<p class="about__info--text">
@@ -130,7 +194,7 @@
 						Why we are the great?
 					</h3>
 					<p class="about__info--text">
-						A visual approach is an approach to a runway at an airport 
+						A visual approach is an approach to a runway at an airport
 						conducted under instrument flight rules.
 						The preceding aircraft in approach correct sight.
 					</p>
@@ -140,7 +204,7 @@
 		<!-- END ABOUT -->
 
 		<!-- WORKS -->
-		<div class="works container">
+		<div id="works" class="works container">
 			<h2 class="works__title">
 				Featured works
 			</h2>
@@ -149,32 +213,32 @@
 			</p>
 			<div class="works__content">
 				<div class="works__content--row1 row">
-					<img 
-						src="img/works-icecream.jpg" 
+					<img
+						src="img/works-icecream.jpg"
 						alt="Photo of featured works"
 						>
-					<img 
-						class="works__img--mgn" 
-						src="img/works-boxes.jpg" 
+					<img
+						class="works__img--mgn"
+						src="img/works-boxes.jpg"
 						alt="Photo of featured works"
 					>
-					<img 
-						src="img/works-bottles.jpg" 
+					<img
+						src="img/works-bottles.jpg"
 						alt="Photo of featured works"
 					>
 				</div>
 				<div class="works__content--row2 row">
-					<img 
-						src="img/works-book.jpg" 
+					<img
+						src="img/works-book.jpg"
 						alt="Photo of featured works"
 					>
-					<img 
-						class="works__img--mgn" 
-						src="img/works-nine.jpg" 
+					<img
+						class="works__img--mgn"
+						src="img/works-nine.jpg"
 						alt="Photo of featured works"
 					>
-					<img 
-						src="img/works-packaging.jpg" 
+					<img
+						src="img/works-packaging.jpg"
 						alt="Photo of featured works"
 					>
 				</div>
@@ -183,7 +247,7 @@
 		<!-- END WORKS -->
 
 		<!-- SERVICES -->
-		<div class="services container">
+		<div id="services" class="services container">
 			<h2 class="services__title">
 				Our services
 			</h2>
@@ -192,35 +256,178 @@
 			</p>
 			<div class="services__content">
 				<div class="services__content--row1 row">
-					<img 
-						src="img/services-packaging.jpg" 
-						alt="Photo of services">
-					<img 
-						src="img/services-materials.jpg" 
-						alt="Photo of services">
+					<div class="servicebox">
+						<div class="overlay">
+							<div class="overlay__info">
+								<h3 class="overlay__title">
+									Designing is The Cool
+								</h3>
+								<p class="overlay__text">
+									Our most popular service is our Virtual Receptionist. We know that...
+								</p>
+								<a
+									href="#"
+									class="overlay__link"
+									>
+									KNOW MORE
+									<span>
+										&rarr;
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="popup">
+							<div class="popup__info">
+								<h3 class="popup__title">
+									Designing is The CooL LOVE FOR.
+								</h3>
+								<p class="popup__text">
+									Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
+								</p>
+								<a
+									href="#"
+									class="popup__link"
+									>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										width="19"
+										height="19"
+										viewBox="0 0 19 19"
+										>
+										<defs>
+											<path
+												id="hp1ra"
+												d="M218.97 3610.18l6.53 6.5 6.51-6.52 1.81 1.81-6.5 6.53 6.52 6.51-1.81 1.81-6.53-6.5-6.51 6.52-1.81-1.81 6.5-6.53-6.52-6.51z"
+												/>
+										</defs>
+										<g>
+											<g
+												opacity=".4"
+												transform="translate(-216 -3609)">
+												<use xlink:href="#hp1ra"/>
+											</g>
+										</g>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="servicebox">
+						<div class="overlay">
+							<div class="overlay__info">
+								<h3 class="overlay__title">
+									Cool psd Design
+								</h3>
+								<p class="overlay__text">
+									Our most popular service is our we know that sometimes it’s something and you middle most..
+								</p>
+								<a
+									href="#"
+									class="overlay__link"
+									>
+									KNOW MORE
+									<span>
+										&rarr;
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="services__content--row2 row">
-					<img 
-						src="img/services-laptop.jpg" 
-						alt="Photo of services">
-					<img 
-						src="img/services-workplace.jpg" 
-						alt="Photo of services">
+					<div class="servicebox">
+						<div class="overlay">
+							<div class="overlay__info">
+								<h3 class="overlay__title">
+									Designing is The Cool
+								</h3>
+								<p class="overlay__text">
+									Our most popular service is our Virtual Receptionist. We know that...
+								</p>
+								<a
+									href="#"
+									class="overlay__link"
+									>
+									KNOW MORE
+									<span>
+										&rarr;
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="servicebox">
+						<div class="overlay">
+							<div class="overlay__info">
+								<h3 class="overlay__title">
+									PSD TO HTML KORI
+								</h3>
+								<p class="overlay__text">
+									We know that sometimes it’s something and you middle most..
+								</p>
+								<a
+									href="#"
+									class="overlay__link"
+									>
+									KNOW MORE
+									<span>
+										&rarr;
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="services__content--row3 row">
-					<img 
-						src="img/services-cups.jpg" 
-						alt="Photo of services">
-					<img 
-						src="img/services-bottle.jpg" 
-						alt="Photo of services">					
+					<div class="servicebox">
+						<div class="overlay">
+							<div class="overlay__info">
+								<h3 class="overlay__title">
+									Cool psd Design
+								</h3>
+								<p class="overlay__text">
+									Our most popular service is our new virtual Receptionist you middle most..
+								</p>
+								<a
+									href="#"
+									class="overlay__link"
+									>
+									KNOW MORE
+									<span>
+										&rarr;
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="servicebox">
+						<div class="overlay">
+							<div class="overlay__info">
+								<h3 class="overlay__title">
+									Designing is The Cool FOR
+								</h3>
+								<p class="overlay__text">
+									Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most..
+								</p>
+								<a
+									class="overlay__link"
+									href="#">
+									KNOW MORE
+									<span>
+										&rarr;
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<!-- END SERVICES -->
 
 		<!-- TEAM -->
-		<div class="team container">
+		<div id="team" class="team container">
 			<h2 class="team__title">
 				Small team
 			</h2>
@@ -232,64 +439,64 @@
 					<div class="member">
 						<div class="member__overlay">
 							<p class="member__title">
-								AL RAYHAN 
+								AL RAYHAN
 								<span>
 									/ UI Designer
 								</span>
 							</p>
 							<p class="member__text">
 								Lorem Ipsum is not simply is  an action designer random text
-								It has roots in a piece. 
+								It has roots in a piece.
 							</p>
 							<ul class="member__socialicon">
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://www.facebook.com/"
 										title="facebook.com"
 										target="_blank"
 										>
-										<img 
-											src="img/team-facebook.png" 
+										<img
+											src="img/team-facebook.png"
 											alt="Facebook"
 											>
 									</a>
 								</li>
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://twitter.com/"
 										title="twitter.com"
 										target="_blank"
 										>
-										<img 
-											src="img/team-twitter.png" 
+										<img
+											src="img/team-twitter.png"
 											alt="Twitter"
 											>
 									</a>
 								</li>
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://dribbble.com/"
 										title="dribbble.com"
 										target="_blank"
 										>
-										<img 
-											src="img/team-dribbble.png" 
+										<img
+											src="img/team-dribbble.png"
 											alt="Dribbble"
 											>
 									</a>
 								</li>
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://www.google.com/intl/en/gmail/about/"
 										title="Email"
 										target="_blank"
 										>
-										<img 
-											src="img/team-email.png" 
+										<img
+											src="img/team-email.png"
 											alt="Email"
 											>
 									</a>
@@ -300,64 +507,64 @@
 					<div class="member team__member--mgn">
 						<div class="member__overlay">
 							<p class="member__title">
-								AL RAYHAN 
+								AL RAYHAN
 								<span>
 									/ UI Designer
 								</span>
 							</p>
 							<p class="member__text">
 								Lorem Ipsum is not simply is  an action designer random text
-								It has roots in a piece. 
+								It has roots in a piece.
 							</p>
 							<ul class="member__socialicon">
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://www.facebook.com/"
 										title="Facebook"
 										target="_blank"
 										>
-										<img 
-											src="img/team-facebook.png" 
+										<img
+											src="img/team-facebook.png"
 											alt="Facebook"
 											>
 									</a>
 								</li>
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://twitter.com/"
 										title="Twitter"
 										target="_blank"
 										>
-										<img 
-											src="img/team-twitter.png" 
+										<img
+											src="img/team-twitter.png"
 											alt="Twitter"
 											>
 									</a>
 								</li>
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://dribbble.com/"
 										title="Dribbble"
 										target="_blank"
 										>
-										<img 
-											src="img/team-dribbble.png" 
+										<img
+											src="img/team-dribbble.png"
 											alt="Dribbble"
 											>
 									</a>
 								</li>
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://www.google.com/intl/en/gmail/about/"
 										title="Email"
 										target="_blank"
 										>
-										<img 
-											src="img/team-email.png" 
+										<img
+											src="img/team-email.png"
 											alt="Email"
 											>
 									</a>
@@ -368,64 +575,64 @@
 					<div class="member">
 						<div class="member__overlay">
 							<p class="member__title">
-								AL RAYHAN 
+								AL RAYHAN
 								<span>
 									/ UI Designer
 								</span>
 							</p>
 							<p class="member__text">
 								Lorem Ipsum is not simply is  an action designer random text
-								It has roots in a piece. 
+								It has roots in a piece.
 							</p>
 							<ul class="member__socialicon">
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://www.facebook.com/"
 										title="Facebook"
 										target="_blank"
 										>
-										<img 
-											src="img/team-facebook.png" 
+										<img
+											src="img/team-facebook.png"
 											alt="Facebook"
 											>
 									</a>
 								</li>
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://twitter.com/"
 										title="Twitter"
 										target="_blank"
 										>
-										<img 
-											src="img/team-twitter.png" 
+										<img
+											src="img/team-twitter.png"
 											alt="Twitter"
 											>
 									</a>
 								</li>
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://dribbble.com/"
 										title="Dribbble"
 										target="_blank"
 										>
-										<img 
-											src="img/team-dribbble.png" 
+										<img
+											src="img/team-dribbble.png"
 											alt="Dribbble"
 											>
 									</a>
 								</li>
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://www.google.com/intl/en/gmail/about/"
 										title="Email"
 										target="_blank"
 										>
-										<img 
-											src="img/team-email.png" 
+										<img
+											src="img/team-email.png"
 											alt="Email"
 											>
 									</a>
@@ -438,64 +645,64 @@
 					<div class="member">
 						<div class="member__overlay">
 							<p class="member__title">
-								AL RAYHAN 
+								AL RAYHAN
 								<span>
 									/ UI Designer
 								</span>
 							</p>
 							<p class="member__text">
 								Lorem Ipsum is not simply is  an action designer random text
-								It has roots in a piece. 
+								It has roots in a piece.
 							</p>
 							<ul class="member__socialicon">
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://www.facebook.com/"
 										title="Facebook"
 										target="_blank"
 										>
-										<img 
-											src="img/team-facebook.png" 
+										<img
+											src="img/team-facebook.png"
 											alt="Facebook"
 											>
 									</a>
 								</li>
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://twitter.com/"
 										title="Twitter"
 										target="_blank"
 										>
-										<img 
-											src="img/team-twitter.png" 
+										<img
+											src="img/team-twitter.png"
 											alt="Twitter"
 											>
 									</a>
 								</li>
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://dribbble.com/"
 										title="Dribbble"
 										target="_blank"
 										>
-										<img 
-											src="img/team-dribbble.png" 
+										<img
+											src="img/team-dribbble.png"
 											alt="Dribbble"
 											>
 									</a>
 								</li>
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://www.google.com/intl/en/gmail/about/"
 										title="Email"
 										target="_blank"
 										>
-										<img 
-											src="img/team-email.png" 
+										<img
+											src="img/team-email.png"
 											alt="Email"
 											>
 									</a>
@@ -506,64 +713,64 @@
 					<div class="member row2 team__member--mgn">
 						<div class="member__overlay">
 							<p class="member__title">
-								AL RAYHAN 
+								AL RAYHAN
 								<span>
 									/ UI Designer
 								</span>
 							</p>
 							<p class="member__text">
 								Lorem Ipsum is not simply is  an action designer random text
-								It has roots in a piece. 
+								It has roots in a piece.
 							</p>
 							<ul class="member__socialicon">
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://www.facebook.com/"
 										title="Facebook"
 										target="_blank"
 										>
-										<img 
-											src="img/team-facebook.png" 
+										<img
+											src="img/team-facebook.png"
 											alt="Facebook"
 											>
 									</a>
 								</li>
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://twitter.com/"
 										title="Twitter"
 										target="_blank"
 										>
-										<img 
-											src="img/team-twitter.png" 
+										<img
+											src="img/team-twitter.png"
 											alt="Twitter"
 											>
 									</a>
 								</li>
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://dribbble.com/"
 										title="Dribbble"
 										target="_blank"
 										>
-										<img 
-											src="img/team-dribbble.png" 
+										<img
+											src="img/team-dribbble.png"
 											alt="Dribbble"
 											>
 									</a>
 								</li>
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://www.google.com/intl/en/gmail/about/"
 										title="Email"
 										target="_blank"
 										>
-										<img 
-											src="img/team-email.png" 
+										<img
+											src="img/team-email.png"
 											alt="Email"
 											>
 									</a>
@@ -574,63 +781,63 @@
 					<div class="member row2">
 						<div class="member__overlay">
 							<p class="member__title">
-								AL RAYHAN 
+								AL RAYHAN
 								<span>
 									/ UI Designer
 								</span>
 							</p>
 							<p class="member__text">
 								Lorem Ipsum is not simply is  an action designer random text
-								It has roots in a piece. 
+								It has roots in a piece.
 							</p>
 							<ul class="member__socialicon">
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://www.facebook.com/"
 										title="Facebook"
 										target="_blank">
-										<img 
-											src="img/team-facebook.png" 
+										<img
+											src="img/team-facebook.png"
 											alt="Facebook"
 											>
 									</a>
 								</li>
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://twitter.com/"
 										title="Twitter"
 										target="_blank"
 										>
-										<img 
-											src="img/team-twitter.png" 
+										<img
+											src="img/team-twitter.png"
 											alt="Twitter"
 											>
 									</a>
 								</li>
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://dribbble.com/"
 										title="Dribbble"
 										target="_blank"
 										>
-										<img 
-											src="img/team-dribbble.png" 
+										<img
+											src="img/team-dribbble.png"
 											alt="Dribbble"
 											>
 									</a>
 								</li>
 								<li class="member__socialicon-item">
-									<a 
+									<a
 										class="member__socialicon-link"
 										href="https://www.google.com/intl/en/gmail/about/"
 										title="Email"
 										target="_blank"
 										>
-										<img 
-											src="img/team-email.png" 
+										<img
+											src="img/team-email.png"
 											alt="Email"
 											>
 									</a>
@@ -644,7 +851,7 @@
 		<!-- END TEAM -->
 
 		<!-- TESTIMONIAL -->
-		<div class="testimonial container">
+		<div id="testimonial" class="testimonial container">
 			<h2 class="testimonial__title">
 				What they says
 			</h2>
@@ -655,86 +862,188 @@
 		<!-- END TESTIMONIAL -->
 
 		<!-- PARTNERS -->
-		<div class="partners container">
-			<img 
-				class="partners__img" 
-				src="img/partners.png" 
+		<div id="partners" class="partners container">
+			<img
+				class="partners__img"
+				src="img/partners.png"
 				alt="Logo of partner">
 		</div>
 		<!-- END PARTNERS -->
 
 		<!-- CONTACT -->
-		<div class="contact container">
-
+		<div class="contact container" id="contact">
+			<div class="contact__blocks row">
+				<div class="contact__blocks--form">
+				 <form
+				 	id="user_message"
+				 	class="form"
+					name="user_message"
+					action="#"
+					method="get"
+					autocomplete="on"
+						>
+				  <fieldset class="form__fieldset">
+				     <input
+ 							required
+						 	type="text"
+							name="username"
+							placeholder="Name*"
+								>
+				     <input
+ 							required
+						 	type="text"
+							name="subject"
+							placeholder="Subject*"
+								>
+				     <input
+ 						 required
+						 type="email"
+						 name="email"
+						 placeholder="E-mail*"
+						 	>
+						<textarea
+							required
+							rows="2"
+							placeholder="Message*"
+							from="user_message"
+							name="user_message"
+							minlength="5"
+							maxlength="1000"
+							wrap="soft"
+							>
+						</textarea>
+						<br>
+				      <input
+								type="submit"
+	 						 	name="submit"
+								value="SEND MESSAGE"
+								>
+				  </fieldset>
+				 </form>
+				</div>
+				<div class="contact__blocks--address">
+					<address class="address">
+					<p>
+						<span>
+							Adress line 1
+						</span>
+						<br>
+						<span>
+							Adress line 2
+						</span>
+						<br>
+						<span>
+							Phone:
+						</span>
+						<a
+							href="tel: +548945645"
+							title="Call"
+							>
+							+548945645
+						</a>
+						<br>
+						<span>
+							Fax:
+						</span>
+						<a
+							href="tel: +45645654546"
+							title="Call"
+						>
+							+45645654546
+						</a>
+					</p>
+					<p>
+						<a
+							href="http://www.designagency.net/"
+							title="designagency.net"
+							target="_blank"
+							>
+							Web: www.designagency.net
+						</a>
+						<br>
+						<a
+							href="mailto: info@designagency.net"
+							title="Write an email"
+							>
+							info@designagency.net
+						</a>
+					</p>
+					<img
+						class="address__map"
+						src="img/contact-map.jpg"
+						alt="Google Map">
+					</address>
+				</div>
+			</div>
 		</div>
 		<!-- END CONTACT -->
 	</main>
 
-	<footer class="footer container">
-		<p class="footer__follow">
-			FOLLOW US
-		</p>
-		<ul class="footer__listicon">
-			<li class="footer__listicon--item">
-				<a 
-					class="footer__listicon--link"
-					href="https://www.pinterest.com/"
-					title="pinterest.com"
-					target="_blank"
-					>
-					<img 
-						class="footer__listicon--img"
-						src="img/footer-pinterest.png" 
-						alt="Pinterest icon"
+		<footer class="footer container">
+			<p class="footer__follow">
+				FOLLOW US
+			</p>
+			<ul class="footer__listicon">
+				<li class="footer__listicon--item">
+					<a
+						class="footer__listicon--link"
+						href="https://www.pinterest.com/"
+						title="pinterest.com"
+						target="_blank"
 						>
-				</a>
-			</li>
-			<li class="footer__listicon--item">
-				<a 
-					class="footer__listicon--link"
-					href="https://twitter.com/"
-					title="twitter.com"
-					target="_blank"
-					>
-					<img 
-						class="footer__listicon--img"
-						src="img/footer-twitter.png" 
-						alt="Twitter icon"
+						<img
+							class="footer__listicon--img"
+							src="img/footer-pinterest.png"
+							alt="Pinterest icon"
+							>
+					</a>
+				</li>
+				<li class="footer__listicon--item">
+					<a
+						class="footer__listicon--link"
+						href="https://twitter.com/"
+						title="twitter.com"
+						target="_blank"
 						>
-				</a>
-			</li>
-			<li class="footer__listicon--item">
-				<a 
-					class="footer__listicon--link"
-					href="https://www.facebook.com/"
-					title="facebook.com"
-					target="_blank"
-					>
-					<img 
-						class="footer__listicon--img"
-						src="img/footer-facebook.png" 
-						alt="Facebook icon"
+						<img
+							class="footer__listicon--img"
+							src="img/footer-twitter.png"
+							alt="Twitter icon"
+							>
+					</a>
+				</li>
+				<li class="footer__listicon--item">
+					<a
+						class="footer__listicon--link"
+						href="https://www.facebook.com/"
+						title="facebook.com"
+						target="_blank"
 						>
-				</a>
-			</li>
-			<li class="footer__listicon--item">
-				<a 
-					class="footer__listicon--link"
-					href="https://dribbble.com/"
-					title="dribbble.com"
-					target="_blank"
-					>
-					<img 
-						class="footer__listicon--img"
-						src="img/footer-dribbble.png" 
-						alt="Dribbble icon"
+						<img
+							class="footer__listicon--img"
+							src="img/footer-facebook.png"
+							alt="Facebook icon"
+							>
+					</a>
+				</li>
+				<li class="footer__listicon--item">
+					<a
+						class="footer__listicon--link"
+						href="https://dribbble.com/"
+						title="dribbble.com"
+						target="_blank"
 						>
-				</a>
-			</li>
-		</ul>
-		<p class="footer__copyright">
-			Copyright Masum Parvej, All Rights Reserved
-		</p>
-	</footer>
+						<img
+							class="footer__listicon--img"
+							src="img/footer-dribbble.png"
+							alt="Dribbble icon"
+							>
+					</a>
+				</li>
+			</ul>
+			<p class="footer__copyright">
+				Copyright Masum Parvej, All Rights Reserved
+			</p>
+		</footer>
 </body>
 </html>

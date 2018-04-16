@@ -58,6 +58,15 @@
  	background-color: rgb(110, 238, 227);
 }
 
+.member__overlay::before {
+	content: '';
+	position: absolute;
+	top: -30px;
+	left: 21px;
+	border: 11px solid transparent;
+	border-bottom: 19px solid rgb(110, 238, 227);
+}
+
 .member:hover .member__overlay {
 	display: block;
 	position: absolute;
@@ -80,7 +89,7 @@
 	font-weight: 600;
 	font-style: normal;
 	color: rgb(0, 0, 0);
-	
+
 }
 
 .member__title span {
@@ -106,4 +115,10 @@
 .member__socialicon-item {
 	display: inline-block;
 	padding: 30px 4px;
+}
+
+
+{
+	transform: scale(1.02);
+	transition: 1s ease-out;
 }

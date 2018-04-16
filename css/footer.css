@@ -1,4 +1,5 @@
 .footer {
+	position: static;
 	height: 312px;
 	background-color: rgb(38, 43, 46);
 	text-align: center;
@@ -30,19 +31,23 @@
  	vertical-align: middle;
  	padding: 9px;
  	background-color: rgb(66, 70, 72);
+    transition-duration: .8s;
 }
 
 .footer__listicon--item:hover {
  	background-color: rgb(110, 238, 227);
+	transition: 0.6s ease-out;
  	cursor: pointer;
 }
 
 .footer__listicon--img {
  	vertical-align: middle;
+    transition-duration: .8s;
 }
 
 .footer__listicon--img:hover {
  	background-color: transparent;
+	transition: 0.6s ease-out;
 }
 
 .footer__listicon--img:nth-child(1) {

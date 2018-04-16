@@ -1,6 +1,7 @@
 .partners {
 	height: 385px;
-	background: url(../img/contact-bg.jpg) 50% 0% no-repeat;
+	/*background: url(../img/contact-bg.jpg) 50% 0% no-repeat;
+	background-size: cover;*/
 }
 
 .partners__img {

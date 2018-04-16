@@ -15,6 +15,13 @@
 .works__content--row1 img,
 .works__content--row2 img {
 	width: calc(33.33% - 10px);
+    transition-duration: .8s;
+}
+
+.works__content--row1 img:hover,
+.works__content--row2 img:hover {
+	transform: scale(1.02);
+	transition: 1s ease-out;
 }
 
 .works__content--row2 {
