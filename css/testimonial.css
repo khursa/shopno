@@ -2,3 +2,47 @@
 	height: 922px;
 	background-color: rgb(249,251,251);
 }
+
+.testimonial_slider {
+	display: flex;
+	justify-content: space-between;
+	height: 365px;
+	margin-top: 160px;
+}
+
+.testimonial_slider--photo {
+	position: relative;
+	height: 100%;
+	background-color: #e3e4e6;		
+	width: 390px;
+	margin: 0 40px;
+}
+
+.testimonial_slider--photo:after {
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 325px;
+	background: url(../img/team-3.jpg);
+}
+
+.testimonial_slider--info {
+	height: 100%;
+	background-color: #e3e4e6;		
+	width: 670px;
+	margin: 0 40px;
+	font-family: sans-serif;
+	color: gray;
+	text-align: center;
+}
+
+.testimonial_slider--info h3 {
+	padding-top: 100px;
+}
+
+.testimonial_slider--info p {
+	text-wrap: 200;
+	font-size: 12px;
+	margin: 0 80px;
+	padding-top: 80px;
+}
